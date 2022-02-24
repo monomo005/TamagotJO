@@ -13,7 +13,7 @@ public class TimingManager : MonoBehaviour
         }
         else
         {
-        gameHourTimer -=Time.deltaTime;
+        gameHourTimer -= Time.deltaTime;
         }
     }
 }

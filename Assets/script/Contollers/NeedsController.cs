@@ -10,7 +10,7 @@ public class NeedsController : MonoBehaviour
         lastTimeGainedEnergy;
         private void Awake()
         {
-            Intialize( 100, 100, 100, 10, 10, 10);
+            Intialize( 100, 100, 100, 5, 2, 1);
         }
     public void Intialize(int food,int happiness,int energy,int foodTickRate,int happinessTickRate,int energyTickRate)
     {
@@ -23,6 +23,7 @@ public class NeedsController : MonoBehaviour
         this.foodTickRate = foodTickRate;
         this.happinessTickRate = happinessTickRate;
         this.energyTickRate = energyTickRate;
+        PetUIContoller.instance.UpdateImages(food, happiness, energy);
     }
         public void Intialize(int food,int happiness,int energy,int foodTickRate,int happinessTickRate,int energyTickRate,
         DateTime lastTimeFed, DateTime lastTimeHappy, DateTime lastTimeGainedEnergy)
@@ -36,6 +37,7 @@ public class NeedsController : MonoBehaviour
         this.foodTickRate = foodTickRate;
         this.happinessTickRate = happinessTickRate;
         this.energyTickRate = energyTickRate;
+        PetUIContoller.instance.UpdateImages(food, happiness, energy);
         }
     private void Update() 
         {
@@ -44,6 +46,7 @@ public class NeedsController : MonoBehaviour
                 ChangeFood(-foodTickRate);
                 ChangeHappiness(-happinessTickRate);
                 ChangeEnergy(-energyTickRate);
+                PetUIContoller.instance.UpdateImages(food, happiness, energy);
             }
         }
     public void ChangeFood(int amount)
@@ -57,7 +60,7 @@ public class NeedsController : MonoBehaviour
         {
             PetManager.instance.Die();
         }
-        else if (food < 100) food = 100;
+        else if (food > 100) food = 100;
     }
     public void ChangeHappiness(int amount)
     {
@@ -70,7 +73,7 @@ public class NeedsController : MonoBehaviour
         {
              PetManager.instance.Die();
         }
-         else if (happiness < 100) happiness = 100;
+         else if (happiness > 100) happiness = 100;
     }
     public void ChangeEnergy(int amount)
     {
@@ -83,7 +86,7 @@ public class NeedsController : MonoBehaviour
         {
              PetManager.instance.Die();
         }
-         else if (energy < 100) energy = 100;
+         else if (energy > 100) energy = 100;
     }
 }   
     
