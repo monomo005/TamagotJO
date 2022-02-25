@@ -33,7 +33,7 @@ public class PetContollers : MonoBehaviour
        }
        public void walk()
        {
-           petAnimator.SetTrigger("walk");
+           petAnimator.SetTrigger("Walk");
        }
        public void Jump()
        {
