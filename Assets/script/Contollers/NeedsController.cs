@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class NeedsController : MonoBehaviour
 {
+    [SerializeField] int given1Exp = 1;
+    [SerializeField] int given2Exp = 3;
+    [SerializeField] int given3Exp = 5;
     public int food,happiness, energy;
     public int foodTickRate, happinessTickRate, energyTickRate;
     public DateTime lastTimeFed,
@@ -52,9 +55,11 @@ public class NeedsController : MonoBehaviour
     public void ChangeFood(int amount)
     {
         food += amount;
+        
         if(amount > 0)
         {
             lastTimeFed = DateTime.Now;
+            ExpStat.instance.Update_PetEXP(given1Exp);
         }
         if(food < 0)
         {
@@ -65,9 +70,11 @@ public class NeedsController : MonoBehaviour
     public void ChangeHappiness(int amount)
     {
         happiness += amount;
+        
         if(amount > 0)
         {
             lastTimeHappy = DateTime.Now;
+            ExpStat.instance.Update_PetEXP(given2Exp);
         }
         if(happiness < 0)
         {
@@ -78,9 +85,11 @@ public class NeedsController : MonoBehaviour
     public void ChangeEnergy(int amount)
     {
         energy += amount;
+        
         if(amount > 0)
         {
             lastTimeGainedEnergy = DateTime.Now;
+            ExpStat.instance.Update_PetEXP(given3Exp);
         }
         if(energy < 0)
         {
