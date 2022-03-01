@@ -10,7 +10,7 @@ public class ExpStat : MonoBehaviour
     public int PetExp = 0;
     public int nextEXPtoLevelUp = 100;
     [SerializeField] GameObject Panel_PetEvolution;
-
+     [SerializeField] int given100Topaz = 100;
     private void Awake() 
     {
         instance = this;
@@ -41,8 +41,9 @@ public class ExpStat : MonoBehaviour
         {
             PetExp = PetExp - nextEXPtoLevelUp;
             nextEXPtoLevelUp += 100;
-
+            
              Enable_EvolutionPanel();
+            Topaz.instance.Update_Topas(given100Topaz);
         }
 
     }

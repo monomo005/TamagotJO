@@ -6,6 +6,9 @@ public class NeedsController : MonoBehaviour
     [SerializeField] int given1Exp = 1;
     [SerializeField] int given2Exp = 3;
     [SerializeField] int given3Exp = 5;
+    [SerializeField] int given1coin = 1;
+    [SerializeField] int given2coin = 3;
+    [SerializeField] int given3coin = 5;
     public int food,happiness, energy;
     public int foodTickRate, happinessTickRate, energyTickRate;
     public DateTime lastTimeFed,
@@ -60,6 +63,7 @@ public class NeedsController : MonoBehaviour
         {
             lastTimeFed = DateTime.Now;
             ExpStat.instance.Update_PetEXP(given1Exp);
+            Currency.instance.Update_Coin(given1coin);
         }
         if(food < 0)
         {
@@ -75,6 +79,7 @@ public class NeedsController : MonoBehaviour
         {
             lastTimeHappy = DateTime.Now;
             ExpStat.instance.Update_PetEXP(given2Exp);
+            Currency.instance.Update_Coin(given2coin);
         }
         if(happiness < 0)
         {
@@ -90,6 +95,7 @@ public class NeedsController : MonoBehaviour
         {
             lastTimeGainedEnergy = DateTime.Now;
             ExpStat.instance.Update_PetEXP(given3Exp);
+            Currency.instance.Update_Coin(given3coin);
         }
         if(energy < 0)
         {

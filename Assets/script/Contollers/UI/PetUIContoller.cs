@@ -8,7 +8,11 @@ public class PetUIContoller : MonoBehaviour
     public static PetUIContoller instance;
     [SerializeField] Image ExpValueUI;
     [SerializeField] Text ExpTextValue;
+    
+    
     float targetEXPRatioToSet = 1.0f;
+    
+    
 
     private void Awake()
     {
@@ -28,6 +32,8 @@ public class PetUIContoller : MonoBehaviour
     void Update()
     {
         Update_PetExpInterface();
+
+
     }
     void Update_PetExpInterface()
     {
@@ -37,4 +43,5 @@ public class PetUIContoller : MonoBehaviour
         float currentFillAmount_EXP = ExpValueUI.fillAmount;
         ExpValueUI.fillAmount = Mathf.Lerp(currentFillAmount_EXP, targetEXPRatioToSet, 0.05f);
     }
+  
 }
