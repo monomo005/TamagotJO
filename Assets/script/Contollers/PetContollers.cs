@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PetContollers : MonoBehaviour
 {
+   public static PetContollers instance;
    public Animator petAnimator;
    private Vector3 _destination;
    public float speed;

@@ -26,7 +26,7 @@ public class Shit : MonoBehaviour
     }
     void Update()
     {
-      
+      OnMouseDown();
     }
     void Spawnshit1()
     {
@@ -54,7 +54,7 @@ public class Shit : MonoBehaviour
     }
     public void OnMouseDown() 
     {
-        Currency.instance.Update_Coin(given3coin);
+        //Currency.instance.Update_Coin(given3coin);
         Destroy(gameObject);
     }
         
