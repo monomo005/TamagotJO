@@ -29,10 +29,12 @@ public class PetUIContoller : MonoBehaviour
         happinessImage.fillAmount = (float) happiness / 100;
         energyImage.fillAmount = (float) energy / 100;
     }
+    
     void Update()
     {
         Update_PetExpInterface();
-
+        NeedsController.instance.Disable_RainPanel();
+       
 
     }
     void Update_PetExpInterface()
@@ -43,5 +45,8 @@ public class PetUIContoller : MonoBehaviour
         float currentFillAmount_EXP = ExpValueUI.fillAmount;
         ExpValueUI.fillAmount = Mathf.Lerp(currentFillAmount_EXP, targetEXPRatioToSet, 0.05f);
     }
-  
+   public void Click_Rain()
+   {
+       NeedsController.instance.click_RainPanel(); 
+   }
 }
