@@ -85,6 +85,7 @@ public class Charecter : MonoBehaviour
         {
             if(m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Falling"))
             {
+                Debug.Log("Landing");
                 m_Animator.Play("Landing");
                 InJump = false;
             }
