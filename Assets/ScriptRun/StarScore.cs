@@ -1,27 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class StarScore : MonoBehaviour
 {
-    public GameObject Star;
-    public int score = 0;
     void Start()
     {
-        score = 0;
+
     }
 
     
     void Update()
     {
-        
+        transform.Rotate(0,1,0);
     }
      void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            
-            Destroy(this.gameObject);
+            Charecter.numberCoin +=1;
+
+            Destroy(gameObject);
         }
 
     }

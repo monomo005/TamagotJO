@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 [System.Serializable]
 public enum SIDE {Left,Mid,Right}
 
 public class Charecter : MonoBehaviour
 {
     public SIDE m_Side = SIDE.Mid;
-    float NewXPos = 0f;
+    float NewXPos = -0.1f;
     [HideInInspector]
     public bool SwipeLeft,SwipeRight,SwipeUp,SwipeDown;
    
-    
+    public static int numberCoin;
+    public Text EndScore;
+    public Text Scorestar;
     public float XValue;
     private CharacterController m_char;
     private Animator m_Animator;
@@ -21,9 +24,10 @@ public class Charecter : MonoBehaviour
     private float y;
     public bool InJump;
     public bool InRoll;
-    public float FwdSpeed = 7f;
+    public static float FwdSpeed = 7f;
     private float ColHeight;
     private float ColCenterY;
+    public float SpeedTest = 20;
     void Start()
     {
         m_char = GetComponent<CharacterController>();
@@ -31,6 +35,7 @@ public class Charecter : MonoBehaviour
         ColCenterY = m_char.center.y;
         m_Animator = GetComponent<Animator>();
         transform.position = Vector3.zero;
+        numberCoin = 0;
     }
 
     
@@ -70,6 +75,9 @@ public class Charecter : MonoBehaviour
         m_char.Move(moveVector);
         Jump();
         Roll();
+        EndScore.text="Score :" + numberCoin; 
+        Scorestar.text ="Star:" + numberCoin; 
+        changeSpeed();
     }
     public void Jump()
     {
@@ -113,5 +121,14 @@ public class Charecter : MonoBehaviour
             InRoll = true;
             InJump = false;
         }
+    }
+    public void changeSpeed()
+    {
+        SpeedTest -= Time.deltaTime;
+        if(SpeedTest <= 0)
+        {
+            FwdSpeed +=3;
+            SpeedTest +=20;
+        }    
     }
 }

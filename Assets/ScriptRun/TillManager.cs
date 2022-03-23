@@ -41,4 +41,5 @@ public class TillManager : MonoBehaviour
          Destroy(activeTile[0]);
          activeTile.RemoveAt(0);
      }
+     
 }
