@@ -20,6 +20,10 @@ public class Currency : MonoBehaviour
     public void Update_Coin(int CoinAmount)
     {
         Coin += CoinAmount;
+        if(Coin <= 0)
+        {
+            Coin = 0;
+        }
 
     }
    
