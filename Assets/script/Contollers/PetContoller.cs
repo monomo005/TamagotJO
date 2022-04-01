@@ -11,13 +11,15 @@ public class PetContoller : MonoBehaviour
     private static float clean = 100;
     public static int Stamina =100;
 
-    public GameObject currencyCoin;
+    public Currency currencyCoin;
+
+    public ExpStat exp;
 
     public bool isHaveMoney;
 
-    public Button Feed;
-    public Button Clean;
-    public Button Sleep;
+    public Button Hotdog, Pizza;
+    public Button Nap, Slumber;
+    public Button Shampoo, TakeBath;
 
     public Image BubbleHung;
     public Image Bubbledozy;
@@ -93,8 +95,29 @@ public class PetContoller : MonoBehaviour
         if (currencyCoin.GetComponent<Currency>().Coin == 0)
         {
             isHaveMoney = false;
+            
+            Pizza.interactable = false;
+            Hotdog.interactable = false;
+
+            Nap.interactable = false;
+            Slumber.interactable = false;
+
+            TakeBath.interactable = false;
+            Shampoo.interactable = false;
         }
 
+        else 
+        {
+            isHaveMoney = true;
+            Pizza.interactable = true;
+            Hotdog.interactable = true;
+
+            Nap.interactable = true;
+            Slumber.interactable = true;
+
+            TakeBath.interactable = true;
+            Shampoo.interactable = true;
+        }
     }
 
     private void needsCheck()
@@ -156,11 +179,6 @@ public class PetContoller : MonoBehaviour
             currencyCoin.GetComponent<Currency>().Update_Coin(pay1coin);
             ExpStat.instance.Update_PetEXP(EXP2p);
         }
-        else
-        {
-            GetComponent<Currency>().enabled = false;
-            GetComponent<ExpStat>().enabled = false;
-        }
     }
     public void OnclickFood3()
     {
@@ -170,11 +188,6 @@ public class PetContoller : MonoBehaviour
             hunger += 40;
             currencyCoin.GetComponent<Currency>().Update_Coin(pay5coin);
             ExpStat.instance.Update_PetEXP(EXP5p);
-        }
-        else
-        {
-            GetComponent<Currency>().enabled = false;
-            GetComponent<ExpStat>().enabled = false;
         }
     }
     public void Onclicksleep1()
@@ -193,11 +206,6 @@ public class PetContoller : MonoBehaviour
             currencyCoin.GetComponent<Currency>().Update_Coin(pay1coin);
             ExpStat.instance.Update_PetEXP(EXP2p);
         }
-        else
-        {
-            GetComponent<Currency>().enabled = false;
-            GetComponent<ExpStat>().enabled = false;
-        }
     }
     public void Onclicksleep3()
     {
@@ -209,11 +217,6 @@ public class PetContoller : MonoBehaviour
             currencyCoin.GetComponent<Currency>().Update_Coin(pay5coin);
             ExpStat.instance.Update_PetEXP(EXP5p);
         }
-        else
-        {
-            GetComponent<Currency>().enabled = false;
-            GetComponent<ExpStat>().enabled = false;
-        }
     }
     public void Onclickclean1()
     {
@@ -224,15 +227,10 @@ public class PetContoller : MonoBehaviour
     {
         //เช็คว่ามีเงินไหม ถ้าไม่มี ไม่เรียก script เพิ่ม exp และ ความหิว
         if (isHaveMoney == true)
-        {
+        {            
             clean += 20;
             currencyCoin.GetComponent<Currency>().Update_Coin(pay1coin);
             ExpStat.instance.Update_PetEXP(EXP2p);
-        }
-        else
-        {
-            GetComponent<Currency>().enabled = false;
-            GetComponent<ExpStat>().enabled = false;
         }
     }
     public void Onclickclean3()
@@ -243,11 +241,6 @@ public class PetContoller : MonoBehaviour
             clean += 50;
             currencyCoin.GetComponent<Currency>().Update_Coin(pay5coin);
             ExpStat.instance.Update_PetEXP(EXP5p);
-        }
-        else
-        {
-            GetComponent<Currency>().enabled = false;
-            GetComponent<ExpStat>().enabled = false;
         }
     }
 }
