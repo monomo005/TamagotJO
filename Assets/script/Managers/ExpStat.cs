@@ -13,6 +13,10 @@ public class ExpStat : MonoBehaviour
      [SerializeField] Image ExpValueUI;
      [SerializeField] Text ExpTextValue;
      float targetEXPRatioToSet = 1.0f;
+
+    public GameObject Star1;
+    public GameObject Star2;
+    public GameObject Star3;
     private void Awake() 
     {
         instance = this;
@@ -20,6 +24,9 @@ public class ExpStat : MonoBehaviour
     void Start() 
     {
         Panel_PetEvolution.SetActive(false);   
+        Star1.SetActive(true);
+        Star2.SetActive(false);
+        Star3.SetActive(false);
     }
     void Update()
     {
@@ -47,6 +54,15 @@ public class ExpStat : MonoBehaviour
         {
             PetExp = PetExp - nextEXPtoLevelUp;
             nextEXPtoLevelUp += 100;
+
+            if(nextEXPtoLevelUp >=200)
+            {
+                Star2.SetActive(true);
+            }
+            if(nextEXPtoLevelUp >=300)
+            {
+                Star3.SetActive(true);
+            }
             
              Enable_EvolutionPanel();
             Topaz.instance.Update_Topas(given100Topaz);

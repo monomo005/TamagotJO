@@ -20,6 +20,7 @@ public class PetContoller : MonoBehaviour
     public Image Bubbledirty;
     public Image Bubbleplay;
 
+
     [SerializeField] int pay1coin = -1;
     [SerializeField] int pay5coin = -5;
     [SerializeField] int EXP1p = 1;
@@ -37,6 +38,7 @@ public class PetContoller : MonoBehaviour
         Bubbledozy.CrossFadeAlpha(0,0.001f, true);
         Bubbledirty.CrossFadeAlpha(0,0.001f, true);
         Bubbleplay.CrossFadeAlpha(0,0.001f, true);
+
     }
 
     
@@ -140,6 +142,7 @@ public class PetContoller : MonoBehaviour
         hunger += 20;
         Currency.instance.Update_Coin(pay1coin);
         ExpStat.instance.Update_PetEXP(EXP2p);
+        
     }
     public void OnclickFood3()
     {
