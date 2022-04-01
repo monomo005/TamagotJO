@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.48856753, g: 0.63057655, b: 0.7204785, a: 1}
+  m_IndirectSpecularColor: {r: 0.6500282, g: 0.7589001, b: 0.77972174, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1382,6 +1382,9 @@ MonoBehaviour:
   given100Topaz: 100
   ExpValueUI: {fileID: 895600069}
   ExpTextValue: {fileID: 855899282}
+  Star1: {fileID: 0}
+  Star2: {fileID: 0}
+  Star3: {fileID: 0}
 --- !u!1 &104950499
 GameObject:
   m_ObjectHideFlags: 0
@@ -24694,6 +24697,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424079d6cffbc014aa6b75956fd276a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currencyCoin: {fileID: 1841369000}
+  isHaveMoney: 0
   Feed: {fileID: 1989717436}
   Clean: {fileID: 1408542820}
   Sleep: {fileID: 1028418027}

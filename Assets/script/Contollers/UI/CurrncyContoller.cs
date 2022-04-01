@@ -19,8 +19,8 @@ public class CurrncyContoller : MonoBehaviour
     }
     void Update_CurrencyValue()
     {
-    CurrencyValue.text = Currency.instance.Coin + " " ;
-    targetCurrencyValue =  Currency.instance.Coin *1.0f;
+    CurrencyValue.text = GetComponent<Currency>().Coin + " " ;
+    targetCurrencyValue = GetComponent<Currency>().Coin *1.0f;
     }
     void Update_TopazValue()
     {
