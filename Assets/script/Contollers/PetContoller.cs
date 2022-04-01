@@ -133,6 +133,7 @@ public class PetContoller : MonoBehaviour
     {
         hunger += 10;
         ExpStat.instance.Update_PetEXP(EXP1p);
+
     }
     public void OnclickFood2()
     {

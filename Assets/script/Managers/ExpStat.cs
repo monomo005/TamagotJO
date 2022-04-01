@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 public class ExpStat : MonoBehaviour
 {
    
@@ -11,6 +10,9 @@ public class ExpStat : MonoBehaviour
     public int nextEXPtoLevelUp = 100;
     [SerializeField] GameObject Panel_PetEvolution;
      [SerializeField] int given100Topaz = 100;
+     [SerializeField] Image ExpValueUI;
+     [SerializeField] Text ExpTextValue;
+     float targetEXPRatioToSet = 1.0f;
     private void Awake() 
     {
         instance = this;
@@ -19,7 +21,11 @@ public class ExpStat : MonoBehaviour
     {
         Panel_PetEvolution.SetActive(false);   
     }
-    
+    void Update()
+    {
+        Update_PetExpInterface();
+        
+    }
     void Enable_EvolutionPanel() 
     {
            Panel_PetEvolution.SetActive(true);
@@ -45,6 +51,13 @@ public class ExpStat : MonoBehaviour
              Enable_EvolutionPanel();
             Topaz.instance.Update_Topas(given100Topaz);
         }
+    }
+    void Update_PetExpInterface()
+    {
+        ExpTextValue.text = ExpStat.instance.PetExp + "/" + ExpStat.instance.nextEXPtoLevelUp;
+        targetEXPRatioToSet = ExpStat.instance.PetExp *1.0f / ExpStat.instance.nextEXPtoLevelUp;
 
+        float currentFillAmount_EXP = ExpValueUI.fillAmount;
+        ExpValueUI.fillAmount = Mathf.Lerp(currentFillAmount_EXP, targetEXPRatioToSet, 0.05f);
     }
 }

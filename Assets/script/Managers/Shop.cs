@@ -6,7 +6,6 @@ public class Shop : MonoBehaviour
 {
     public static Shop instance;
     [SerializeField] GameObject Panel_shop;
-    [SerializeField] GameObject Panel_shopfood;
     [SerializeField] GameObject Panel_shopfuniture;
     [SerializeField] GameObject Panel_shopfashion;
     [SerializeField] GameObject Panel_shopTopaz;

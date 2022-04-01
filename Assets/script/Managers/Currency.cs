@@ -7,11 +7,15 @@ public class Currency : MonoBehaviour
 {
     public static Currency instance;
     
-    public int Coin = 0;
+    public int Coin;
     
     private void Awake() 
     {
         instance = this;
+    }
+    void start()
+    {
+        Coin = 100;
     }
     void Update()
     {

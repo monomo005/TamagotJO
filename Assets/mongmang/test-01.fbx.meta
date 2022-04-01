@@ -1,0 +1,287 @@
+fileFormatVersion: 2
+guid: a419e915ffcfd6242a1f19bf683e5159
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -8386389547896557799
+    second: Armature|Animation_Armature
+  - first:
+      74: 2525315443939218385
+    second: Armature|Animation_Armature.001
+  - first:
+      74: 8100862994686678565
+    second: Armature|Animation_Armature.002
+  - first:
+      74: -6467754836777990992
+    second: Armature|Animation_CTR-Eyelip.L
+  - first:
+      74: 2491435886501139615
+    second: Armature|Animation_CTR-Eyelip.R
+  - first:
+      74: 7399161767180567247
+    second: Armature|Animation_CTR-Main-Eye
+  - first:
+      74: -1376228928694759204
+    second: Armature|Animation_DEF-_Toe.L
+  - first:
+      74: 4362031528375203388
+    second: Armature|Animation_DEF-Arm.L
+  - first:
+      74: 2210055466165210729
+    second: Armature|Animation_DEF-Arm.R
+  - first:
+      74: -3370830340907875115
+    second: Armature|Animation_DEF-Chest
+  - first:
+      74: 6509616055791375544
+    second: Armature|Animation_DEF-Eye.L
+  - first:
+      74: -5723918517000992163
+    second: Armature|Animation_DEF-Eye.R
+  - first:
+      74: -8044944176097030147
+    second: Armature|Animation_DEF-Eyelip.L
+  - first:
+      74: -9194811081963700276
+    second: Armature|Animation_DEF-Eyelip.R
+  - first:
+      74: -325204819736406122
+    second: Armature|Animation_DEF-Hair
+  - first:
+      74: 3897916422628502491
+    second: Armature|Animation_DEF-Head
+  - first:
+      74: -4088432443457972259
+    second: Armature|Animation_DEF-LowerBackpack
+  - first:
+      74: -2860060426808165020
+    second: Armature|Animation_DEF-LowerCamera
+  - first:
+      74: 5988088125439378251
+    second: Armature|Animation_DEF-Lowermouth
+  - first:
+      74: -1442044133900487390
+    second: Armature|Animation_DEF-UpperBackpack
+  - first:
+      74: 8536983387002890559
+    second: Armature|Animation_DEF-UpperCamera
+  - first:
+      74: 3346504390008409661
+    second: Armature|Animation_TGT-_Toe.L
+  - first:
+      74: 2216383356531561986
+    second: Armature|Animation_TGT-Arm.L
+  - first:
+      74: 6903818206767810017
+    second: Armature|Animation_TGT-Arm.R
+  - first:
+      74: 2031473757043646589
+    second: Armature|Animation_TGT-Chest
+  - first:
+      74: 7445091000251247408
+    second: Armature|Animation_TGT-Eye.L
+  - first:
+      74: 4015917076022656876
+    second: Armature|Animation_TGT-Eye.R
+  - first:
+      74: 3523397055315692237
+    second: Armature|Animation_TGT-Eyelip.L
+  - first:
+      74: 7866160199342524032
+    second: Armature|Animation_TGT-Eyelip.R
+  - first:
+      74: -3619253998971334059
+    second: Armature|Animation_TGT-Head
+  - first:
+      74: 1191970226451894270
+    second: Armature|Animation_TGT-LowerBackpack
+  - first:
+      74: 1723843115631835191
+    second: Armature|Animation_TGT-LowerCamera
+  - first:
+      74: -7528528751957779183
+    second: Armature|Animation_TGT-Lowermouth
+  - first:
+      74: -360307998263004653
+    second: Armature|Animation_TGT-UpperBackpack
+  - first:
+      74: -5569696002987140397
+    second: Armature|Animation_TGT-UpperCamera
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body_001
+    second: {fileID: 2100000, guid: ec97393068b693543ab376e926ab5435, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hat
+    second: {fileID: 2100000, guid: cdbe666b0f1384740ad70c0da949b4cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: 1ac8472da1a667249bf6c832afee098f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.011
+    second: {fileID: 2100000, guid: 1c314653e97d80a4d87c63d8a254a9f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.012
+    second: {fileID: 2100000, guid: d0af16a19757584409dd1550e7d31557, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.014
+    second: {fileID: 2100000, guid: fa8a12fed3f96424892af356f0b0d93c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.015
+    second: {fileID: 2100000, guid: c49aa153f1441fc40b6a15c9f9870042, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.016
+    second: {fileID: 2100000, guid: 5df7e2b424db3e74daadb4d86d813c95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.017
+    second: {fileID: 2100000, guid: f824116e769a50e4195a4e31f9d840a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.018
+    second: {fileID: 2100000, guid: 43ea3edcadb839e4cb7939c50541291d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.019
+    second: {fileID: 2100000, guid: de1ffc76162246447b2c8f8cc8e8b222, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MongMang_Shoe_L
+    second: {fileID: 2100000, guid: 948e425799ae9574288dd315385be014, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rope_L
+    second: {fileID: 2100000, guid: 575118192f807d949997753430f355e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: edge of the hat
+    second: {fileID: 2100000, guid: 8b2f1f73d3077b3439df147e6e5b360c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shirt.002
+    second: {fileID: 2100000, guid: e18905cc201ad1f4fbc7bbdfcd4bb667, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trousers
+    second: {fileID: 2100000, guid: a9752922438e8a94288df10689ee1bb1, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
