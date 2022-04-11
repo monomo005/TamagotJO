@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.48755795, g: 0.63010347, b: 0.72030073, a: 1}
+  m_IndirectSpecularColor: {r: 0.62609696, g: 0.73944426, b: 0.77097654, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -27153,6 +27153,11 @@ MonoBehaviour:
   exps5: {fileID: 579033698}
   coins1: {fileID: 1792925953}
   coins5: {fileID: 1351562215}
+  coin1: {fileID: 1792925955}
+  coin5: {fileID: 0}
+  exp1: {fileID: 0}
+  exp2: {fileID: 0}
+  exp3: {fileID: 0}
 --- !u!114 &919132149407058359
 MonoBehaviour:
   m_ObjectHideFlags: 0

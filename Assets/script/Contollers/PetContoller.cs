@@ -37,6 +37,12 @@ public class PetContoller : MonoBehaviour
     [SerializeField] GameObject exps5;
     [SerializeField] GameObject coins1;
     [SerializeField] GameObject coins5;
+
+    public Animator coin1;
+    public Animator coin5;
+    public Animator exp1;
+    public Animator exp2;
+    public Animator exp3;
     
     private void Awake() 
     {
@@ -128,6 +134,31 @@ public class PetContoller : MonoBehaviour
             TakeBath.interactable = true;
             Shampoo.interactable = true;
         }
+
+        if (coin1.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !coin1.IsInTransition(0))
+        {
+            coins1.SetActive(false);
+        }
+
+        if (coin5.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !coin5.IsInTransition(0))
+        {
+            coins5.SetActive(false);
+        }
+
+        if (exp1.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !exp1.IsInTransition(0))
+        {
+            exps1.SetActive(false);
+        }
+
+        if (exp2.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !exp2.IsInTransition(0))
+        {
+            exps2.SetActive(false);
+        }
+
+        if (exp3.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !exp3.IsInTransition(0))
+        {
+            exps5.SetActive(false);
+        }
     }
 
     private void needsCheck()
@@ -180,6 +211,8 @@ public class PetContoller : MonoBehaviour
         hunger += 10;
         ExpStat.instance.Update_PetEXP(EXP1p);
         exps1.SetActive(true);
+
+        exp1.SetTrigger("Active");
     }
     public void OnclickFood2()
     {
@@ -191,6 +224,9 @@ public class PetContoller : MonoBehaviour
             ExpStat.instance.Update_PetEXP(EXP2p);
             exps2.SetActive(true);
             coins1.SetActive(true);
+
+            exp2.SetTrigger("Active");
+            coin1.SetTrigger("Active");
         }
     }
     public void OnclickFood3()
@@ -203,6 +239,9 @@ public class PetContoller : MonoBehaviour
             ExpStat.instance.Update_PetEXP(EXP5p);
             exps5.SetActive(true);
             coins5.SetActive(true);
+
+            exp3.SetTrigger("Active");
+            coin5.SetTrigger("Active");
         }
     }
     public void Onclicksleep1()
@@ -211,6 +250,8 @@ public class PetContoller : MonoBehaviour
         Stamina += 1;
         ExpStat.instance.Update_PetEXP(EXP1p);
         exps1.SetActive(true);
+
+        exp1.SetTrigger("Active");
     }
     public void Onclicksleep2()
     {
@@ -223,6 +264,9 @@ public class PetContoller : MonoBehaviour
             ExpStat.instance.Update_PetEXP(EXP2p);
             exps2.SetActive(true);
             coins1.SetActive(true);
+
+            exp2.SetTrigger("Active");
+            coin1.SetTrigger("Active");
         }
     }
     public void Onclicksleep3()
@@ -236,6 +280,9 @@ public class PetContoller : MonoBehaviour
             ExpStat.instance.Update_PetEXP(EXP5p);
              exps5.SetActive(true);
             coins5.SetActive(true);
+
+            exp3.SetTrigger("Active");
+            coin5.SetTrigger("Active");
         }
     }
     public void Onclickclean1()
@@ -243,6 +290,8 @@ public class PetContoller : MonoBehaviour
         clean += 10;
         ExpStat.instance.Update_PetEXP(EXP1p);
         exps1.SetActive(true);
+
+        exp1.SetTrigger("Active");
     }
     public void Onclicksclean2()
     {
@@ -254,6 +303,9 @@ public class PetContoller : MonoBehaviour
             ExpStat.instance.Update_PetEXP(EXP2p);
             exps2.SetActive(true);
             coins1.SetActive(true);
+
+            exp2.SetTrigger("Active");
+            coin1.SetTrigger("Active");
         }
     }
     public void Onclickclean3()
@@ -264,8 +316,11 @@ public class PetContoller : MonoBehaviour
             clean += 50;
             currencyCoin.GetComponent<Currency>().Update_Coin(pay5coin);
             ExpStat.instance.Update_PetEXP(EXP5p);
-             exps5.SetActive(true);
+            exps5.SetActive(true);
             coins5.SetActive(true);
+
+            exp3.SetTrigger("Active");
+            coin5.SetTrigger("Active");
         }
     }
 }
