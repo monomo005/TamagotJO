@@ -17,6 +17,11 @@ public class ExpStat : MonoBehaviour
     public GameObject Star1;
     public GameObject Star2;
     public GameObject Star3;
+
+    public GameObject Emote1;
+    public GameObject Emote2;
+    public GameObject Emote3;
+    public GameObject Emote4;
     private void Awake() 
     {
         instance = this;
@@ -58,10 +63,12 @@ public class ExpStat : MonoBehaviour
             if(nextEXPtoLevelUp >=200)
             {
                 Star2.SetActive(true);
+                transformPo.instance.Date();
             }
             if(nextEXPtoLevelUp >=300)
             {
                 Star3.SetActive(true);
+                transformPo.instance.Date2();
             }
             
              Enable_EvolutionPanel();

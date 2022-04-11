@@ -9,6 +9,7 @@ TagManager:
   - DoublePotion
   - MagnetL
   - Obstract
+  - Food
   layers:
   - Default
   - TransparentFX

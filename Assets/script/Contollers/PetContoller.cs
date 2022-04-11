@@ -32,6 +32,11 @@ public class PetContoller : MonoBehaviour
     [SerializeField] int EXP2p = 2;
     [SerializeField] int EXP5p = 5;
 
+    [SerializeField] GameObject exps1;
+    [SerializeField] GameObject exps2;
+    [SerializeField] GameObject exps5;
+    [SerializeField] GameObject coins1;
+    [SerializeField] GameObject coins5;
     
     private void Awake() 
     {
@@ -47,6 +52,11 @@ public class PetContoller : MonoBehaviour
         currencyCoin.GetComponent<Currency>();
 
         isHaveMoney = true;
+        exps1.SetActive(false);
+        exps2.SetActive(false);
+        exps5.SetActive(false);
+        coins1.SetActive(false);
+        coins5.SetActive(false);
     }
 
     
@@ -169,6 +179,7 @@ public class PetContoller : MonoBehaviour
     {
         hunger += 10;
         ExpStat.instance.Update_PetEXP(EXP1p);
+        exps1.SetActive(true);
     }
     public void OnclickFood2()
     {
@@ -178,6 +189,8 @@ public class PetContoller : MonoBehaviour
             hunger += 20;
             currencyCoin.GetComponent<Currency>().Update_Coin(pay1coin);
             ExpStat.instance.Update_PetEXP(EXP2p);
+            exps2.SetActive(true);
+            coins1.SetActive(true);
         }
     }
     public void OnclickFood3()
@@ -188,6 +201,8 @@ public class PetContoller : MonoBehaviour
             hunger += 40;
             currencyCoin.GetComponent<Currency>().Update_Coin(pay5coin);
             ExpStat.instance.Update_PetEXP(EXP5p);
+            exps5.SetActive(true);
+            coins5.SetActive(true);
         }
     }
     public void Onclicksleep1()
@@ -195,6 +210,7 @@ public class PetContoller : MonoBehaviour
         sleep += 10;
         Stamina += 1;
         ExpStat.instance.Update_PetEXP(EXP1p);
+        exps1.SetActive(true);
     }
     public void Onclicksleep2()
     {
@@ -205,6 +221,8 @@ public class PetContoller : MonoBehaviour
             Stamina += 2;
             currencyCoin.GetComponent<Currency>().Update_Coin(pay1coin);
             ExpStat.instance.Update_PetEXP(EXP2p);
+            exps2.SetActive(true);
+            coins1.SetActive(true);
         }
     }
     public void Onclicksleep3()
@@ -216,12 +234,15 @@ public class PetContoller : MonoBehaviour
             Stamina += 5;
             currencyCoin.GetComponent<Currency>().Update_Coin(pay5coin);
             ExpStat.instance.Update_PetEXP(EXP5p);
+             exps5.SetActive(true);
+            coins5.SetActive(true);
         }
     }
     public void Onclickclean1()
     {
         clean += 10;
         ExpStat.instance.Update_PetEXP(EXP1p);
+        exps1.SetActive(true);
     }
     public void Onclicksclean2()
     {
@@ -231,6 +252,8 @@ public class PetContoller : MonoBehaviour
             clean += 20;
             currencyCoin.GetComponent<Currency>().Update_Coin(pay1coin);
             ExpStat.instance.Update_PetEXP(EXP2p);
+            exps2.SetActive(true);
+            coins1.SetActive(true);
         }
     }
     public void Onclickclean3()
@@ -241,6 +264,8 @@ public class PetContoller : MonoBehaviour
             clean += 50;
             currencyCoin.GetComponent<Currency>().Update_Coin(pay5coin);
             ExpStat.instance.Update_PetEXP(EXP5p);
+             exps5.SetActive(true);
+            coins5.SetActive(true);
         }
     }
 }

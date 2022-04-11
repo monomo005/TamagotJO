@@ -6,6 +6,7 @@ public class Setting : MonoBehaviour
 {
     public static Setting instance;
     [SerializeField] GameObject Panel_Setting;
+    [SerializeField] GameObject Panel_Main;
     private void Awake() 
     {
         instance = this;
@@ -25,9 +26,11 @@ public void Click_ToOption()
     void Enable_SettingPanel() 
     {
            Panel_Setting.SetActive(true);
+           Panel_Main.SetActive(false);
     }
     void Disable_SettingPanel()
     {
            Panel_Setting.SetActive(false);
+           Panel_Main.SetActive(true);
     }
 }
