@@ -43,6 +43,15 @@ public class PetContoller : MonoBehaviour
     public Animator exp1;
     public Animator exp2;
     public Animator exp3;
+
+
+    public Spawner spawner;
+    public Spawner2 spawner2;
+    public Spawner3 spawner3;
+
+    [SerializeField] bool checkFood1Spawn = false;
+    [SerializeField] bool checkFood2Spawn = false;
+    [SerializeField] bool checkFood3Spawn = false;
     
     private void Awake() 
     {
@@ -55,6 +64,7 @@ public class PetContoller : MonoBehaviour
         Bubbledirty.CrossFadeAlpha(0,0.001f, true);
         Bubbleplay.CrossFadeAlpha(0,0.001f, true);
 
+        
         currencyCoin.GetComponent<Currency>();
 
         isHaveMoney = true;
@@ -62,7 +72,11 @@ public class PetContoller : MonoBehaviour
         exps2.SetActive(false);
         exps5.SetActive(false);
         coins1.SetActive(false);
-        coins5.SetActive(false);
+        coins5.SetActive(false);      
+
+        spawner.GetComponent<Spawner>();
+        spawner2.GetComponent<Spawner2>();
+        spawner3.GetComponent<Spawner3>();
     }
 
     
@@ -159,7 +173,45 @@ public class PetContoller : MonoBehaviour
         {
             exps5.SetActive(false);
         }
+   
+       if(checkFood1Spawn == true)
+       {
+            Spawner.instance.SpawnIt();
+            spawner.enabled = true;
+            checkFood1Spawn = false;
+       }
+
+       if(checkFood1Spawn == false)
+       {
+           spawner.enabled = false;
+       }
+
+       if(checkFood2Spawn == true)
+       {
+            Spawner2.instance.SpawnIt();
+            spawner2.enabled = true;
+            checkFood2Spawn = false;
+       }
+
+       if(checkFood2Spawn == false)
+       {
+           spawner2.enabled = false;
+       }
+
+       if(checkFood3Spawn == true)
+       {
+            Spawner3.instance.SpawnIt();
+            spawner3.enabled = true;
+            checkFood3Spawn = false;
+       }
+
+       if(checkFood3Spawn == false)
+       {
+           spawner3.enabled = false;
+       }
+       
     }
+
 
     private void needsCheck()
     {
@@ -208,11 +260,15 @@ public class PetContoller : MonoBehaviour
     }
     public void OnclickFood1()
     {
-        hunger += 10;
-        ExpStat.instance.Update_PetEXP(EXP1p);
-        exps1.SetActive(true);
+       hunger += 10;
+       ExpStat.instance.Update_PetEXP(EXP1p);
+       exps1.SetActive(true);
+
+       checkFood1Spawn = true;
 
         exp1.SetTrigger("Active");
+        
+        
     }
     public void OnclickFood2()
     {
@@ -224,9 +280,12 @@ public class PetContoller : MonoBehaviour
             ExpStat.instance.Update_PetEXP(EXP2p);
             exps2.SetActive(true);
             coins1.SetActive(true);
+            checkFood2Spawn = true;
 
             exp2.SetTrigger("Active");
             coin1.SetTrigger("Active");
+            
+            
         }
     }
     public void OnclickFood3()
@@ -239,9 +298,12 @@ public class PetContoller : MonoBehaviour
             ExpStat.instance.Update_PetEXP(EXP5p);
             exps5.SetActive(true);
             coins5.SetActive(true);
+            checkFood3Spawn = true;
 
             exp3.SetTrigger("Active");
             coin5.SetTrigger("Active");
+            
+           
         }
     }
     public void Onclicksleep1()

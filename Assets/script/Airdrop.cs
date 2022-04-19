@@ -10,10 +10,12 @@ public class Airdrop : MonoBehaviour
     {
      transform.Translate(Vector3.down * Time.deltaTime, Space.World);
     }
+
 void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.name == "Eat")
         {
+            Debug.Log("Hit");
         Destroy(this.gameObject);
         }
     }

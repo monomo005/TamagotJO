@@ -10,6 +10,7 @@ TagManager:
   - MagnetL
   - Obstract
   - Food
+  - SpawnCocut
   layers:
   - Default
   - TransparentFX
