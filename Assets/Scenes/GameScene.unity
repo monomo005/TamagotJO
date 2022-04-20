@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.641075, g: 0.75131255, b: 0.77658623, a: 1}
+  m_IndirectSpecularColor: {r: 0.6382513, g: 0.7493535, b: 0.77564734, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2943,7 +2943,7 @@ GameObject:
   - component: {fileID: 227072926}
   m_Layer: 0
   m_Name: Count
-  m_TagString: Untagged
+  m_TagString: Coco
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2986,15 +2986,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ecef9a8c60332a4d8b8ccfb306e345e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Timer: 10
   time: {fileID: 227072924}
-  StartTime: 17:00
+  hours: 0
+  minutes: 0
+  seconds: 10
+  RewardToEarn: 0
   prefabsToSpawn:
   - {fileID: 4380971544210014, guid: d06d97d517fe17e46bb3e636ecba1151, type: 3}
   - {fileID: 4380971544210014, guid: d06d97d517fe17e46bb3e636ecba1151, type: 3}
   spawnPointTag: Shit
   alwaysSpawn: 1
-  timerSet: 0
   checkCoconut: 0
 --- !u!1 &251147022
 GameObject:

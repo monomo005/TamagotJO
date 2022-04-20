@@ -11,6 +11,7 @@ TagManager:
   - Obstract
   - Food
   - SpawnCocut
+  - Coco
   layers:
   - Default
   - TransparentFX
