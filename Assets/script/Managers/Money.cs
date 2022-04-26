@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Money : MonoBehaviour
 {
+    [SerializeField] int EXP3p = 3;
     [SerializeField] int given10Coin = 20;
 
     public CoconutSpawning coco;
@@ -17,6 +18,8 @@ public class Money : MonoBehaviour
     void OnMouseDown()
     {
         Currency.instance.Update_Coin(given10Coin);
+                ExpStat.instance.Update_PetEXP(EXP3p);
+        //Mong.GetComponent<Animator>().Play("Happy");
         Destroy(gameObject);
 
         coco.rewardClicked();

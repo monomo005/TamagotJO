@@ -109,6 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5059f156c225d89459c18e6c3004ab07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Mong: {fileID: 0}
+  EXP1p: 1
   given10Coin: 20
   coco: {fileID: 0}
 --- !u!1 &2164760703547362055

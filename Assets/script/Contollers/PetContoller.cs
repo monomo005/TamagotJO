@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PetContoller : MonoBehaviour
 {
+    public GameObject Mong;
     public static PetContoller instance;
     private static float sleep = 100;
     private static float hunger = 100;
@@ -26,8 +27,8 @@ public class PetContoller : MonoBehaviour
     public Image Bubbledirty;
     public Image Bubbleplay;
 
-    [SerializeField] int pay1coin = -1;
-    [SerializeField] int pay5coin = -5;
+    [SerializeField] int pay1coin = -5;
+    [SerializeField] int pay5coin = -20;
     [SerializeField] int EXP1p = 1;
     [SerializeField] int EXP2p = 2;
     [SerializeField] int EXP5p = 5;
@@ -263,7 +264,7 @@ public class PetContoller : MonoBehaviour
        hunger += 10;
        ExpStat.instance.Update_PetEXP(EXP1p);
        exps1.SetActive(true);
-
+        Mong.GetComponent<Animator>().Play("Eat");
        checkFood1Spawn = true;
 
         exp1.SetTrigger("Active");
@@ -281,7 +282,7 @@ public class PetContoller : MonoBehaviour
             exps2.SetActive(true);
             coins1.SetActive(true);
             checkFood2Spawn = true;
-
+            Mong.GetComponent<Animator>().Play("Eat");
             exp2.SetTrigger("Active");
             coin1.SetTrigger("Active");
             
@@ -299,7 +300,7 @@ public class PetContoller : MonoBehaviour
             exps5.SetActive(true);
             coins5.SetActive(true);
             checkFood3Spawn = true;
-
+            Mong.GetComponent<Animator>().Play("Eat");
             exp3.SetTrigger("Active");
             coin5.SetTrigger("Active");
             
@@ -312,7 +313,7 @@ public class PetContoller : MonoBehaviour
         Stamina += 1;
         ExpStat.instance.Update_PetEXP(EXP1p);
         exps1.SetActive(true);
-
+        Mong.GetComponent<Animator>().Play("SpinHead");
         exp1.SetTrigger("Active");
     }
     public void Onclicksleep2()
@@ -326,7 +327,7 @@ public class PetContoller : MonoBehaviour
             ExpStat.instance.Update_PetEXP(EXP2p);
             exps2.SetActive(true);
             coins1.SetActive(true);
-
+            Mong.GetComponent<Animator>().Play("SpinHead");
             exp2.SetTrigger("Active");
             coin1.SetTrigger("Active");
         }
@@ -342,7 +343,7 @@ public class PetContoller : MonoBehaviour
             ExpStat.instance.Update_PetEXP(EXP5p);
              exps5.SetActive(true);
             coins5.SetActive(true);
-
+            Mong.GetComponent<Animator>().Play("SpinHead");
             exp3.SetTrigger("Active");
             coin5.SetTrigger("Active");
         }
@@ -352,7 +353,7 @@ public class PetContoller : MonoBehaviour
         clean += 10;
         ExpStat.instance.Update_PetEXP(EXP1p);
         exps1.SetActive(true);
-
+        Mong.GetComponent<Animator>().Play("Shower");
         exp1.SetTrigger("Active");
     }
     public void Onclicksclean2()
@@ -365,7 +366,7 @@ public class PetContoller : MonoBehaviour
             ExpStat.instance.Update_PetEXP(EXP2p);
             exps2.SetActive(true);
             coins1.SetActive(true);
-
+            Mong.GetComponent<Animator>().Play("Shower");
             exp2.SetTrigger("Active");
             coin1.SetTrigger("Active");
         }
@@ -380,7 +381,7 @@ public class PetContoller : MonoBehaviour
             ExpStat.instance.Update_PetEXP(EXP5p);
             exps5.SetActive(true);
             coins5.SetActive(true);
-
+            Mong.GetComponent<Animator>().Play("Happy");
             exp3.SetTrigger("Active");
             coin5.SetTrigger("Active");
         }

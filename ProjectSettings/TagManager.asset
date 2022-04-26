@@ -12,6 +12,8 @@ TagManager:
   - Food
   - SpawnCocut
   - Coco
+  - Shell
+  - Shellz
   layers:
   - Default
   - TransparentFX

@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6637610240485583382}
-  m_LocalRotation: {x: -0.7034416, y: -0.22609381, z: -0.21840121, w: 0.6374578}
+  m_LocalRotation: {x: -0.7034424, y: -0.22609583, z: -0.2184026, w: 0.63745576}
   m_LocalPosition: {x: 1.255, y: 0.424, z: -1.747}
   m_LocalScale: {x: 14.61613, y: 14.616139, z: 1.3399299}
   m_Children: []
@@ -95,7 +95,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5e34f48577d7c479ccfe5e7faf2397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Mong: {fileID: 0}
+  EXP1p: 1
   given3Coin: 3
+  shell: {fileID: 0}
 --- !u!65 &4599357339230685310
 BoxCollider:
   m_ObjectHideFlags: 0
