@@ -9,6 +9,7 @@ public class ExpStat : MonoBehaviour
     public int PetExp = 0;
     public int nextEXPtoLevelUp = 100;
     [SerializeField] GameObject Panel_PetEvolution;
+        [SerializeField] GameObject Panel_PetUI;
      [SerializeField] int given100Topaz = 100;
      [SerializeField] Image ExpValueUI;
      [SerializeField] Text ExpTextValue;
@@ -22,6 +23,8 @@ public class ExpStat : MonoBehaviour
     public GameObject Emote2;
     public GameObject Emote3;
     public GameObject Emote4;
+
+  
     private void Awake() 
     {
         instance = this;
@@ -41,17 +44,21 @@ public class ExpStat : MonoBehaviour
     void Enable_EvolutionPanel() 
     {
            Panel_PetEvolution.SetActive(true);
-           Time.timeScale = 0; //หยุดจอเพื่อเปลี่ยนร่าง
+           Panel_PetUI.SetActive(false);
+           
     }
     void Disable_EvolutionPanel()
     {
            Panel_PetEvolution.SetActive(false);
-           Time.timeScale = 1; //เริ่มเล่นต่อ
+           Panel_PetUI.SetActive(true);
+           
+           
     }
     public void Click_ToCon()
     {
         Disable_EvolutionPanel();
     }
+    
     public void Update_PetEXP(int expAmount)
     {
         PetExp += expAmount;
@@ -62,11 +69,13 @@ public class ExpStat : MonoBehaviour
 
             if(nextEXPtoLevelUp >=200)
             {
+                EggOpen.instance.OpEgg1();
                 Star2.SetActive(true);
                 transformPo.instance.Date();
             }
             if(nextEXPtoLevelUp >=300)
             {
+                EggOpen.instance.OpEgg2();
                 Star3.SetActive(true);
                 transformPo.instance.Date2();
             }
