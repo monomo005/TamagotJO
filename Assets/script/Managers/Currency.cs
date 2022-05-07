@@ -9,6 +9,8 @@ public class Currency : MonoBehaviour
     
     public int Coin;
     
+     public Topaz topaz;
+
     private void Awake() 
     {
         instance = this;
@@ -30,7 +32,17 @@ public class Currency : MonoBehaviour
         }
 
     }
-   
-    
 
+    public void TopasCoinExchange()
+    {
+        if (topaz.Topas >= 10)
+        {
+            topaz.Topas -= 10;
+            Coin += 100;
+        }
+        else if (topaz.Topas < 10)
+        {
+            Debug.Log("You don't have enough Topaz");
+        }
+    }
 }

@@ -6,6 +6,7 @@ public class Exercise : MonoBehaviour
 {
     public static Exercise instance;
     [SerializeField] GameObject Panel_Exercise;
+    [SerializeField] GameObject Panel_PetUI;
     private void Awake() 
     {
         instance = this;
@@ -26,11 +27,13 @@ public class Exercise : MonoBehaviour
     void Enable_ExercisePanel() 
     {
            Panel_Exercise.SetActive(true);
+           Panel_PetUI.SetActive(false);
            
     }
     void Disable_ExercisePanel()
     {
            Panel_Exercise.SetActive(false);
+           Panel_PetUI.SetActive(true);
            
     }
 }

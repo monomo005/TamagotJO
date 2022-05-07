@@ -1,0 +1,900 @@
+fileFormatVersion: 2
+guid: c0a5144fb8e9082438ad8669cdce5014
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: -8386389547896557799
+    second: Armature|Animation_Armature
+  - first:
+      74: -5429171043878575562
+    second: Armature|Animation_CTR-Eye.L
+  - first:
+      74: -2401460459021280569
+    second: Armature|Animation_CTR-Eye.L.001
+  - first:
+      74: -5194837654419109720
+    second: Armature|Animation_CTR-Eye.R
+  - first:
+      74: 8263482205632533585
+    second: Armature|Animation_CTR-Eye.R.001
+  - first:
+      74: -6467754836777990992
+    second: Armature|Animation_CTR-Eyelip.L
+  - first:
+      74: 1546933827411143540
+    second: Armature|Animation_CTR-Eyelip.L.001
+  - first:
+      74: 2491435886501139615
+    second: Armature|Animation_CTR-Eyelip.R
+  - first:
+      74: 7472604836135623277
+    second: Armature|Animation_CTR-Eyelip.R.001
+  - first:
+      74: 7399161767180567247
+    second: Armature|Animation_CTR-Main-Eye
+  - first:
+      74: 5235782288134320338
+    second: Armature|Animation_CTR-Main-Eye.001
+  - first:
+      74: -1376228928694759204
+    second: Armature|Animation_DEF-_Toe.L
+  - first:
+      74: 4196604876512408106
+    second: Armature|Animation_DEF-_Toe.L.001
+  - first:
+      74: -5438125625509346056
+    second: Armature|Animation_DEF-_Toe.R
+  - first:
+      74: 4362031528375203388
+    second: Armature|Animation_DEF-Arm.L
+  - first:
+      74: -7319176059483407408
+    second: Armature|Animation_DEF-Arm.L.001
+  - first:
+      74: 2210055466165210729
+    second: Armature|Animation_DEF-Arm.R
+  - first:
+      74: 5945234037219559195
+    second: Armature|Animation_DEF-Arm.R.001
+  - first:
+      74: -3370830340907875115
+    second: Armature|Animation_DEF-Chest
+  - first:
+      74: 6388338441715292024
+    second: Armature|Animation_DEF-Chest.001
+  - first:
+      74: 6509616055791375544
+    second: Armature|Animation_DEF-Eye.L
+  - first:
+      74: 8346381030748241289
+    second: Armature|Animation_DEF-Eye.L.001
+  - first:
+      74: -5723918517000992163
+    second: Armature|Animation_DEF-Eye.R
+  - first:
+      74: -1153783318603685545
+    second: Armature|Animation_DEF-Eye.R.001
+  - first:
+      74: -4526193537446719327
+    second: Armature|Animation_DEF-Eyelattice.L
+  - first:
+      74: 1043107144264712369
+    second: Armature|Animation_DEF-Eyelattice.R
+  - first:
+      74: -8044944176097030147
+    second: Armature|Animation_DEF-Eyelip.L
+  - first:
+      74: 6059065077631996236
+    second: Armature|Animation_DEF-Eyelip.L.001
+  - first:
+      74: -9194811081963700276
+    second: Armature|Animation_DEF-Eyelip.R
+  - first:
+      74: -6951874644610570621
+    second: Armature|Animation_DEF-Eyelip.R.001
+  - first:
+      74: 3575278028857520123
+    second: Armature|Animation_DEF-Finger.L
+  - first:
+      74: 8200857039730616783
+    second: Armature|Animation_DEF-Finger.R
+  - first:
+      74: 3425470009575588808
+    second: Armature|Animation_DEF-Foot.L
+  - first:
+      74: 1836189311912592315
+    second: Armature|Animation_DEF-Foot.R
+  - first:
+      74: -325204819736406122
+    second: Armature|Animation_DEF-Hair
+  - first:
+      74: -7676552432831217262
+    second: Armature|Animation_DEF-Hair.001
+  - first:
+      74: -7840778752637883123
+    second: Armature|Animation_DEF-Hand.L
+  - first:
+      74: -6060766652577902918
+    second: Armature|Animation_DEF-Hand.L.001
+  - first:
+      74: 2373327966100165337
+    second: Armature|Animation_DEF-Hand.R
+  - first:
+      74: 3897916422628502491
+    second: Armature|Animation_DEF-Head
+  - first:
+      74: -9029878175036704123
+    second: Armature|Animation_DEF-Head.001
+  - first:
+      74: 869471377292216233
+    second: Armature|Animation_DEF-Hip
+  - first:
+      74: 7092857719141267099
+    second: Armature|Animation_DEF-Lefteyebrows.L
+  - first:
+      74: -6924285498138832159
+    second: Armature|Animation_DEF-Lefteyebrows.R
+  - first:
+      74: -1180018448464467565
+    second: Armature|Animation_DEF-Leg.L
+  - first:
+      74: -703916824200668816
+    second: Armature|Animation_DEF-Leg.R
+  - first:
+      74: -4088432443457972259
+    second: Armature|Animation_DEF-LowerBackpack
+  - first:
+      74: -5122977011776631951
+    second: Armature|Animation_DEF-LowerBackpack.001
+  - first:
+      74: -2860060426808165020
+    second: Armature|Animation_DEF-LowerCamera
+  - first:
+      74: 7837783882630781402
+    second: Armature|Animation_DEF-LowerCamera.001
+  - first:
+      74: 5988088125439378251
+    second: Armature|Animation_DEF-Lowermouth
+  - first:
+      74: -1081544110140785004
+    second: Armature|Animation_DEF-Lowermouth.001
+  - first:
+      74: -2594538755875726275
+    second: Armature|Animation_DEF-Middleeyebrows.L
+  - first:
+      74: 8911778935303080481
+    second: Armature|Animation_DEF-Middleeyebrows.R
+  - first:
+      74: 5719138959214871681
+    second: Armature|Animation_DEF-Mouthlip.L
+  - first:
+      74: 7897489138795688927
+    second: Armature|Animation_DEF-Mouthlip.R
+  - first:
+      74: -5939435973826561424
+    second: Armature|Animation_DEF-Righteyebrows.L
+  - first:
+      74: 1281504665992456995
+    second: Armature|Animation_DEF-Righteyebrows.R
+  - first:
+      74: -4232978560880973388
+    second: Armature|Animation_DEF-Shoulder.L
+  - first:
+      74: 2896301557099936973
+    second: Armature|Animation_DEF-Shoulder.R
+  - first:
+      74: 2062030107146296824
+    second: Armature|Animation_DEF-Tail.002
+  - first:
+      74: -1442044133900487390
+    second: Armature|Animation_DEF-UpperBackpack
+  - first:
+      74: -110179660581990719
+    second: Armature|Animation_DEF-UpperBackpack.001
+  - first:
+      74: 8536983387002890559
+    second: Armature|Animation_DEF-UpperCamera
+  - first:
+      74: -6830174603214089401
+    second: Armature|Animation_DEF-Uppermouth
+  - first:
+      74: 955411382566921640
+    second: Armature|Animation_ROOT
+  - first:
+      74: 4301170827222329633
+    second: Armature|Animation_ROOT.001
+  - first:
+      74: 3346504390008409661
+    second: Armature|Animation_TGT-_Toe.L
+  - first:
+      74: -2681611038585328449
+    second: Armature|Animation_TGT-_Toe.L.001
+  - first:
+      74: 927903567785086934
+    second: Armature|Animation_TGT-_Toe.R
+  - first:
+      74: -5136141963919386752
+    second: Armature|Animation_TGT-_Toe.R.001
+  - first:
+      74: 2216383356531561986
+    second: Armature|Animation_TGT-Arm.L
+  - first:
+      74: 5203521627877092266
+    second: Armature|Animation_TGT-Arm.L.001
+  - first:
+      74: 6903818206767810017
+    second: Armature|Animation_TGT-Arm.R
+  - first:
+      74: -8750174018316463469
+    second: Armature|Animation_TGT-Arm.R.001
+  - first:
+      74: 2031473757043646589
+    second: Armature|Animation_TGT-Chest
+  - first:
+      74: -7036384221100657081
+    second: Armature|Animation_TGT-Chest.001
+  - first:
+      74: 7445091000251247408
+    second: Armature|Animation_TGT-Eye.L
+  - first:
+      74: -1879429849247677908
+    second: Armature|Animation_TGT-Eye.L.001
+  - first:
+      74: 4015917076022656876
+    second: Armature|Animation_TGT-Eye.R
+  - first:
+      74: -7379336644700952191
+    second: Armature|Animation_TGT-Eye.R.001
+  - first:
+      74: -8896265875090850572
+    second: Armature|Animation_TGT-Eyelattice.L
+  - first:
+      74: -6706656947564862607
+    second: Armature|Animation_TGT-Eyelattice.R
+  - first:
+      74: 3523397055315692237
+    second: Armature|Animation_TGT-Eyelip.L
+  - first:
+      74: 4987009762692983860
+    second: Armature|Animation_TGT-Eyelip.L.001
+  - first:
+      74: 7866160199342524032
+    second: Armature|Animation_TGT-Eyelip.R
+  - first:
+      74: 7984151946751258127
+    second: Armature|Animation_TGT-Eyelip.R.001
+  - first:
+      74: 7014642521066516568
+    second: Armature|Animation_TGT-Finger.L
+  - first:
+      74: 6926711750420708110
+    second: Armature|Animation_TGT-Finger.L.001
+  - first:
+      74: -6658345139104112484
+    second: Armature|Animation_TGT-Finger.R
+  - first:
+      74: -7272348059106184173
+    second: Armature|Animation_TGT-Finger.R.001
+  - first:
+      74: 774654797446041847
+    second: Armature|Animation_TGT-Foot.L
+  - first:
+      74: 2384291343839027756
+    second: Armature|Animation_TGT-Foot.L.001
+  - first:
+      74: -6307146177572418993
+    second: Armature|Animation_TGT-Foot.R
+  - first:
+      74: -7826014724489224419
+    second: Armature|Animation_TGT-Foot.R.001
+  - first:
+      74: -7460443509302475507
+    second: Armature|Animation_TGT-Hair
+  - first:
+      74: 2076348415186472879
+    second: Armature|Animation_TGT-Hair.001
+  - first:
+      74: 680116229236779906
+    second: Armature|Animation_TGT-Hand.L
+  - first:
+      74: 2369483200497561982
+    second: Armature|Animation_TGT-Hand.L.001
+  - first:
+      74: -8024533216183689093
+    second: Armature|Animation_TGT-Hand.R
+  - first:
+      74: 3577712454984772791
+    second: Armature|Animation_TGT-Hand.R.001
+  - first:
+      74: -3619253998971334059
+    second: Armature|Animation_TGT-Head
+  - first:
+      74: -5553343334425419679
+    second: Armature|Animation_TGT-Head.001
+  - first:
+      74: -4414535659530850158
+    second: Armature|Animation_TGT-Hip
+  - first:
+      74: -4597066533806494643
+    second: Armature|Animation_TGT-Lefteyebrows.L
+  - first:
+      74: -6775392385171698711
+    second: Armature|Animation_TGT-Lefteyebrows.L.001
+  - first:
+      74: 150272209788084876
+    second: Armature|Animation_TGT-Lefteyebrows.R
+  - first:
+      74: 4377088475198625091
+    second: Armature|Animation_TGT-Lefteyebrows.R.001
+  - first:
+      74: 7007074652617475363
+    second: Armature|Animation_TGT-Leg.L
+  - first:
+      74: 2632995432505649810
+    second: Armature|Animation_TGT-Leg.L.001
+  - first:
+      74: 1959351279801750738
+    second: Armature|Animation_TGT-Leg.R
+  - first:
+      74: -1282727612066708456
+    second: Armature|Animation_TGT-Leg.R.001
+  - first:
+      74: 1191970226451894270
+    second: Armature|Animation_TGT-LowerBackpack
+  - first:
+      74: -7497183069288811884
+    second: Armature|Animation_TGT-LowerBackpack.001
+  - first:
+      74: 1723843115631835191
+    second: Armature|Animation_TGT-LowerCamera
+  - first:
+      74: -3465700095883829698
+    second: Armature|Animation_TGT-LowerCamera.001
+  - first:
+      74: -7528528751957779183
+    second: Armature|Animation_TGT-Lowermouth
+  - first:
+      74: -7162516975105920569
+    second: Armature|Animation_TGT-Lowermouth.001
+  - first:
+      74: 2148860231101153297
+    second: Armature|Animation_TGT-Middleeyebrows.L
+  - first:
+      74: 1430510691953019288
+    second: Armature|Animation_TGT-Middleeyebrows.L.001
+  - first:
+      74: 6117025571379541884
+    second: Armature|Animation_TGT-Middleeyebrows.R
+  - first:
+      74: -4841652377938780526
+    second: Armature|Animation_TGT-Middleeyebrows.R.001
+  - first:
+      74: 5674397456990653346
+    second: Armature|Animation_TGT-Mouthlip.L
+  - first:
+      74: -3897551009914535491
+    second: Armature|Animation_TGT-Mouthlip.R
+  - first:
+      74: -8758328201539126962
+    second: Armature|Animation_TGT-Righteyebrows.L
+  - first:
+      74: -3896334433619350309
+    second: Armature|Animation_TGT-Righteyebrows.L.001
+  - first:
+      74: 1043167526734298276
+    second: Armature|Animation_TGT-Righteyebrows.R
+  - first:
+      74: -5032005023770725600
+    second: Armature|Animation_TGT-Righteyebrows.R.001
+  - first:
+      74: -6495247127812653422
+    second: Armature|Animation_TGT-Shoulder.L
+  - first:
+      74: 7424290636391223208
+    second: Armature|Animation_TGT-Shoulder.R
+  - first:
+      74: 5084517747955095369
+    second: Armature|Animation_TGT-Tail.004
+  - first:
+      74: -360307998263004653
+    second: Armature|Animation_TGT-UpperBackpack
+  - first:
+      74: 8074842712549586496
+    second: Armature|Animation_TGT-UpperBackpack.001
+  - first:
+      74: -5569696002987140397
+    second: Armature|Animation_TGT-UpperCamera
+  - first:
+      74: -8755976434606270485
+    second: Armature|Animation_TGT-Uppermouth
+  - first:
+      74: -7037996334558923982
+    second: Armature|Animation_TGT-Uppermouth.001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Asset
+    second: {fileID: 2100000, guid: 677885ceb3ff4994d955d85cd1bf402a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Asset_1
+    second: {fileID: 2100000, guid: 49a227646837f634986401f41a46fb3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Asset_2
+    second: {fileID: 2100000, guid: 096763a14d4209e4ea3dda0f82377575, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Asset_3
+    second: {fileID: 2100000, guid: 10a37139afc68b14d9959006a2179366, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blacktip reef shark_Shoe_L
+    second: {fileID: 2100000, guid: d4d1e48255e62a24db4c35f2c7f01bfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blacktip reef shark_Shoe_L.001
+    second: {fileID: 2100000, guid: cdfc86d282fb49446bdf3085f4ede741, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blacktip reef shark_shirt
+    second: {fileID: 2100000, guid: 5ec6797acf0d9a546ab33b3c561c0107, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blacktip reef shark_trosers
+    second: {fileID: 2100000, guid: 1899633f4a55e5d4eb741c6396703c2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body_001
+    second: {fileID: 2100000, guid: bafcdc38cc29acc4790a6cb8be69f47c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dive_trousers
+    second: {fileID: 2100000, guid: 0b766e11476133c47ac7042f84b38ed7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eye_L
+    second: {fileID: 2100000, guid: 9dd97882e7fc2b544bd6fdd6443d6af8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hat
+    second: {fileID: 2100000, guid: 08cf9d6ba52215b45854d2d9c79dfb96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Head
+    second: {fileID: 2100000, guid: 2b76d2c4642abf449a7744b537083564, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lock_L
+    second: {fileID: 2100000, guid: 6e84f2c2b88e09a46b334f23a1c2bca7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lock_R
+    second: {fileID: 2100000, guid: cc0db825cd619e54da33dc3fe66bb1ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 40d4918bca026f24a8cf6c77c91b97d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: c8e13fe93c704a04cb9a7a1bacf1bd39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.009
+    second: {fileID: 2100000, guid: ce242f5f360d10a4e907dccedc07d204, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.010
+    second: {fileID: 2100000, guid: 1bdc909f58e5d90429f88903eceabfb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.011
+    second: {fileID: 2100000, guid: 29217f3d6293d1b43b806ae144620748, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.012
+    second: {fileID: 2100000, guid: 68b6e67bdd17f3044a021495ea4e8653, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.014
+    second: {fileID: 2100000, guid: 6cbeb926d790c6642b1471e47f4c32ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.015
+    second: {fileID: 2100000, guid: a529b1632f015cb45acb2438bfb4ed5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.016
+    second: {fileID: 2100000, guid: 80153bcbf6a3ca94aa96a4db46805ce4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.017
+    second: {fileID: 2100000, guid: 8a9312554a6953645ab1e49066cbc283, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.018
+    second: {fileID: 2100000, guid: 65a5698aaa691bd44974d5a8a43b3001, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.019
+    second: {fileID: 2100000, guid: 6b4c41e2c1242b8418689a57842aeea6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.028
+    second: {fileID: 2100000, guid: ac8d380e67fb725439ce1dd5ddc96332, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.029
+    second: {fileID: 2100000, guid: 2c35103de2228e24f88cdbf49041fbfa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.030
+    second: {fileID: 2100000, guid: 15c78e75f802c0e4f90114b36a65e63c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.031
+    second: {fileID: 2100000, guid: 00dd568e3ca23f34dada324af195cd74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.032
+    second: {fileID: 2100000, guid: b87b9c1c3979a6d44baaaeba07b5a284, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.033
+    second: {fileID: 2100000, guid: 58b4e8e1b5da13f45a854f9d773882a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.034
+    second: {fileID: 2100000, guid: 2aa6dce92d05d5b4ba192e9eacd3a222, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.035
+    second: {fileID: 2100000, guid: c3946502b0bbbdc48b99799dc56571a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.036
+    second: {fileID: 2100000, guid: 6994612adcbd50e4a9ae7146e4dec987, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.038
+    second: {fileID: 2100000, guid: 404164aab95bb2043b8fa5dcadbc75fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MongMang_Shoe_L
+    second: {fileID: 2100000, guid: 6b871c3a77f73e04fa19cfc5a9b3d1d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rope_L
+    second: {fileID: 2100000, guid: dfb20dfd989359048bad02725203cc32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sash_L
+    second: {fileID: 2100000, guid: 807f1516f6f125c40bc0a45cb0ebf601, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sash_R
+    second: {fileID: 2100000, guid: 89b07e2ed2348744392e60148068c5a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shark_Hat.001
+    second: {fileID: 2100000, guid: 32cad036fefd4bf46af06c1f60855124, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tail
+    second: {fileID: 2100000, guid: 8a0f363b5cd69de4aad2b3677676b0c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Turtle_Shoe_L
+    second: {fileID: 2100000, guid: f2e8eacfb274d1d4fb85e75584b82ee4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Turtle_Shoe_R
+    second: {fileID: 2100000, guid: 78a04baf8f1afa744ac999e80aba8da1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Turtle_shirt
+    second: {fileID: 2100000, guid: 7a17ccda851e7b34ebcb018cc31900af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Turtle_trousers
+    second: {fileID: 2100000, guid: cf3e2eb101a646a49bcfb2852435b653, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: 65221a4c9525a8e4fb83e021633ea0b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: breathing
+    second: {fileID: 2100000, guid: 1c07cb426a39cae419726ca291edc22d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bulb.001
+    second: {fileID: 2100000, guid: 342e068f6a8381947938f0732b6389fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: carapace edge
+    second: {fileID: 2100000, guid: 1de32f5929c6a2b469b16a820c23016e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: edge of the hat
+    second: {fileID: 2100000, guid: 26016d1be9271184b933bc987359fcb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye.001
+    second: {fileID: 2100000, guid: 064c1433220252a44a98c9e4f558193d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_R
+    second: {fileID: 2100000, guid: 3d499bc045ab69d46b67a1e6a7bc0c6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyelid_L
+    second: {fileID: 2100000, guid: 7994940001620e645a264c01aa5e7579, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyelid_R
+    second: {fileID: 2100000, guid: 041071e6d7e2ab8428d88b5a986e240d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: front leg_L
+    second: {fileID: 2100000, guid: 9013c86eef7ed0045bc5a781186d6488, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: front leg_R.002
+    second: {fileID: 2100000, guid: c0fc88f942a7dab4a81e7803af2b84c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glasses
+    second: {fileID: 2100000, guid: 3ab5e4deb7cc7c54ca7b8b36f7abca48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glasses.001
+    second: {fileID: 2100000, guid: 3c886b8e957ef5f4ca00125afe3cd0d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hind legs_L
+    second: {fileID: 2100000, guid: 28c2aff34f781614e96ddc581fd39563, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hind legs_R
+    second: {fileID: 2100000, guid: 83dba10ae4c80434ba43a19a9e38bd4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lock
+    second: {fileID: 2100000, guid: ee2e0656f45670e478b37edeee0a5d2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mouth.002
+    second: {fileID: 2100000, guid: 130a8fc62b0170a4580f554fcd5a2c5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nose.002
+    second: {fileID: 2100000, guid: e682253cc3067874a8f84dc58308de20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shark teeth.002
+    second: {fileID: 2100000, guid: 661691e2d1521ac4fa1b53d9b45cd98c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shirt
+    second: {fileID: 2100000, guid: e920867870fcaf64096bf4e602b4bea2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shirt.002
+    second: {fileID: 2100000, guid: bc2a846fb19419244ab68f2d7b2f55bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: strap
+    second: {fileID: 2100000, guid: 76a12fb808d62f04a82b136e04ed722f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: strapping
+    second: {fileID: 2100000, guid: 1bc84a3acc652a94b8bf991bee48c499, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: strapping.001
+    second: {fileID: 2100000, guid: 2772caa72680b584ea535914b4b6d3e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tank
+    second: {fileID: 2100000, guid: d0e3499177be48d419ca18286e0b66c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tortoiseshell
+    second: {fileID: 2100000, guid: 8aac84b678d10d04782368a083aee2bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tortoiseshell.001
+    second: {fileID: 2100000, guid: 85bb157cd2901eb49b72b1be1056af56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trousers
+    second: {fileID: 2100000, guid: b82cc0ca84ea1ca45be2db3256fd45ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: whale shark hat.002
+    second: {fileID: 2100000, guid: c2132df8957d37741afcd8c6468f029f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: whale shark_shirt
+    second: {fileID: 2100000, guid: 82befd83c6cafa84c8239ee85842d580, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: whale shark_trousers
+    second: {fileID: 2100000, guid: 47971f953d3c7864d9e4c1069748fd95, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
