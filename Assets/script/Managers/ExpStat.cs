@@ -13,6 +13,8 @@ public class ExpStat : MonoBehaviour
      [SerializeField] int given100Topaz = 100;
      [SerializeField] Image ExpValueUI;
      [SerializeField] Text ExpTextValue;
+          [SerializeField] Image ExpValueUI2;
+     [SerializeField] Text ExpTextValue2;
      float targetEXPRatioToSet = 1.0f;
 
     public GameObject Star1;
@@ -91,5 +93,11 @@ public class ExpStat : MonoBehaviour
 
         float currentFillAmount_EXP = ExpValueUI.fillAmount;
         ExpValueUI.fillAmount = Mathf.Lerp(currentFillAmount_EXP, targetEXPRatioToSet, 0.05f);
+
+        ExpTextValue2.text = ExpStat.instance.PetExp + "/" + ExpStat.instance.nextEXPtoLevelUp;
+        targetEXPRatioToSet = ExpStat.instance.PetExp *1.0f / ExpStat.instance.nextEXPtoLevelUp;
+
+        float currentFillAmount_EXP2 = ExpValueUI2.fillAmount;
+        ExpValueUI2.fillAmount = Mathf.Lerp(currentFillAmount_EXP2, targetEXPRatioToSet, 0.05f);
     }
 }

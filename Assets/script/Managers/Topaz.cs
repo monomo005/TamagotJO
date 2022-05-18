@@ -28,7 +28,7 @@ public class Topaz : MonoBehaviour
         current = DateTime.UtcNow;
         tomorrow = current.AddDays(1).Date;
         //Debug.Log((tomorrow - current).TotalHours);
-        Debug.Log(current);
+        //Debug.Log(current);
         if (lastExecution.Day < current.Day)
         {
             lastExecution = current;            

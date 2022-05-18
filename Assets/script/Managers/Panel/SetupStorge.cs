@@ -19,6 +19,56 @@ public class SetupStorge : MonoBehaviour
     [SerializeField] GameObject chair;
     [SerializeField] GameObject chairOn;
     [SerializeField] GameObject chairOff;
+
+    public Button SandboxOn,UmballraOn,SandcastleOn,LifebuoyOn,ChairOn;
+    public Button SandboxOff,UmballraOff,SandcastleOff,LifebuoyOff,ChairOff;
+
+    public BuyFuniture buyFuniture;
+    void Start()
+    {
+        buyFuniture.GetComponent<BuyFuniture>();
+
+            SandboxOn.interactable = false;
+            SandboxOff.interactable = false;
+             UmballraOn.interactable = false;
+            UmballraOff.interactable = false;
+            SandcastleOn.interactable = false;
+            SandcastleOff.interactable = false;
+            LifebuoyOn.interactable = false;
+            LifebuoyOff.interactable = false;
+            ChairOn.interactable = false;
+            ChairOff.interactable = false;
+
+    }
+    void Update()
+    {
+         if (buyFuniture.GetComponent<BuyFuniture>().buyItem1 == true)
+        {
+            SandboxOn.interactable = true;
+            SandboxOff.interactable = true;
+        }
+        if (buyFuniture.GetComponent<BuyFuniture>().buyItem2 == true)
+        {
+            UmballraOn.interactable = true;
+            UmballraOff.interactable = true;
+        }
+        if (buyFuniture.GetComponent<BuyFuniture>().buyItem3 == true)
+        {
+          
+            SandcastleOn.interactable = true;
+            SandcastleOff.interactable = true;
+        }
+        if (buyFuniture.GetComponent<BuyFuniture>().buyItem4 == true)
+         {         
+            LifebuoyOn.interactable = true;
+            LifebuoyOff.interactable = true;
+        }
+        if (buyFuniture.GetComponent<BuyFuniture>().buyItem5 == true)
+        {
+            ChairOn.interactable = true;
+            ChairOff.interactable = true;
+        }
+    }
     public void click_open_sandbox()
     {
         Enable_sandbox();
